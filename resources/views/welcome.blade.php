@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
 
     <title>Hello, world!</title>
   </head>
@@ -68,9 +68,8 @@
         </div>
     </div>
 
-    <script src="{{ asset('/plugins/jquery/jquery.js') }}"></script>
-    <script src="{{ asset('/plugins/popper/popper.js') }}"></script>
-    <script src="{{ asset('/plugins/bootstrap/js/bootstrap.js') }}"></script>
+    {{-- bootstrap, jquery, popper --}}
+    <script src="{{ asset('/js/app.js') }}"></script>
     <script>
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
